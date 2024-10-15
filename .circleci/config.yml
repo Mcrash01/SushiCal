@@ -16,6 +16,7 @@ jobs:
             - v1-dependencies-
 
       - run: npm install
+      - run: npm audit
 
       - save_cache:
           paths:
@@ -25,7 +26,6 @@ jobs:
       # run tests!
       - run: npm run test
       - run: npm run build
-      - run: npm audit
 
 workflows:
   node-tests:
