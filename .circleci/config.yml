@@ -8,11 +8,6 @@ jobs:
     steps:
       - checkout
 
-      # Add npm audit step
-      - run:
-          name: Audit npm packages
-          command: npm audit
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -30,6 +25,11 @@ jobs:
       # run tests!
       - run: npm run test
       - run: npm run build
+
+      # Add npm audit step
+      - run:
+          name: Audit npm packages
+          command: npm audit
 
 workflows:
   node-tests:
