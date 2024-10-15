@@ -77,11 +77,21 @@ export const CalculatorPage: React.FC<Props> = (props: Props) => {
               ))}
             </div>
           </div>
-          <div className={classes.buttonContainer}>
+
+            <div className={classes.buttonContainer}>
             <Button variant="contained" onClick={sendData(result)}>
               {result} Kcal
             </Button>
-          </div>
+            <Button
+              variant="contained"
+              onClick={() => {
+              setValues({});
+              }}
+              style={{ marginLeft: 10 }}
+            >
+              Reset
+            </Button>
+            </div>
         </div>
         <div className={classes.lateralBar}>
           <div className={classes.barSpacer} />
