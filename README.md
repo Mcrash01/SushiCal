@@ -2,7 +2,7 @@ This project was originally created by a former Sipios software engineer [Sebast
 
 ## Available Scripts
 
-In the project directory, you can run:  
+In the project directory, you can run: 
 
 ### `npm start`
 
