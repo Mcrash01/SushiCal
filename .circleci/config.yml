@@ -25,12 +25,7 @@ jobs:
       # run tests!
       - run: npm run test
       - run: npm run build
-      - run: npm config get registry
-
-      # Add npm audit step
-      - run:
-          name: Audit npm packages
-          command: npm audit
+      - run: npm audit
 
 workflows:
   node-tests:
