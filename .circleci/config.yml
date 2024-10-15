@@ -17,8 +17,8 @@ jobs:
 
       # Met à jour npm vers la dernière version
       - run:
-          name: Update npm
-          command: "npm install -g npm@latest"
+          name: Version npm
+          command: "npm --version"
 
       - run: npm install
       - run: npm audit
