@@ -50,5 +50,9 @@
   "devDependencies": {
     "@types/history": "^4.7.5",
     "jest-watch-typeahead": "^0.6.5"
+  },
+  "overrides": {
+    "nth-check": "^2.0.1",
+    "braces": "^3.0.3"
   }
-}
+} 
